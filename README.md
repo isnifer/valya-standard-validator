@@ -7,5 +7,22 @@ Standard validator for [@deepsweet/valya](https://github.com/deepsweet/valya)
 [![Coverage Status](https://coveralls.io/repos/isnifer/valya-standard-validator/badge.svg?branch=master&service=github)](https://coveralls.io/github/isnifer/valya-standard-validator?branch=master)
 
 ### Installation
-`npm install -S valya-standard-validator`
+```bash
+npm install -S valya-standard-validator
+```
+
+### Usage
+```js
+import x from 'valya-standard-validator';
+let standardValidator = x(/* you can send custom error message like {message: 'message'} */);
+// ...
+<Validator
+    value={this.state.username}
+    validators={[standardValidator]}>
+    <input value={this.state.username} onChange={::this.setUsername} />
+</Validator>
+```
+
+### License
+MIT © [Anton Kuznetsov](http://github.com/isnifer)
 
