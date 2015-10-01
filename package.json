@@ -11,7 +11,8 @@
     "precoverage": "rimraf coverage/",
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul cover test.js | tap-spec",
     "precoveralls": "npm run coverage",
-    "coveralls": "coveralls < coverage/lcov.info"
+    "coveralls": "coveralls < coverage/lcov.info",
+    "travis": "npm run coveralls"
   },
   "repository": {
     "type": "git",
